@@ -8,13 +8,10 @@
         <div class="mr-auto place-self-center lg:col-span-7">
             <h1
                 class="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
-                Driving the world as a leading motorcycle company</h1>
+                {{specific_category.title}}</h1>
 
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                Whether it's a group of friends hitting the open road together or a larger gathering of
-                enthusiasts
-                at a rally or event, there's a strong sense of community and shared passion among those who
-                ride.
+                {{specific_category.description}}
             </p>
             <a href="#"
                 class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:ring-gray-500 dark:focus:ring-gray-900">
@@ -58,7 +55,7 @@
                         <p class="text-gray-500 text-xs tracking-widest title-font mb-1">MODEL: {{product.mode_name}}
                         </p>
                         <h2 class="text-gray-900 title-font text-lg font-medium"> ENGINE: {{product.engine}}</h2>
-                        <p class="text-gray-500 text-xs tracking-widest title-font mb-1">PRICE: {{product.price}}
+                        <p class="text-gray-500 text-xs tracking-widest title-font mb-1">PRICE: ${{product.price}}
                         </p>
                     </div>
                 </a>
