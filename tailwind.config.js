@@ -6,6 +6,7 @@ module.exports = {
         'category/templates/*.html',
         'items/templates/*.html',
         'carts/templates/*.html',
+        'users/templates/*.html',
     ],
     theme: {
         extend: {},

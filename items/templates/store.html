@@ -13,7 +13,11 @@
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
                 {{specific_category.description}}
             </p>
-            <a href="#"
+
+
+
+            {% if not request.user.is_authenticated %}
+            <a href="{% url 'login' %}"
                 class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:ring-gray-500 dark:focus:ring-gray-900">
                 Get started With Login
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
@@ -23,6 +27,11 @@
                         clip-rule="evenodd"></path>
                 </svg>
             </a>
+
+            {% endif %}
+
+
+
 
         </div>
         <div class=" lg:mt-0 lg:col-span-5 lg:flex">
