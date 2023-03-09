@@ -15,7 +15,8 @@
 
                 <h1 class="font-bold"></h1>
                 {% comment %} <small>Model Name : {{cart_item.product.mode_name}}</small><br> {% endcomment %}
-                <small class="text-justify">Model Name : {{cart_item.product.mode_name}}</small> <br>
+                <a href="  {{cart_item.product.get_url}}" class='cursor-pointer'><small class="text-justify">Model Name
+                        : {{cart_item.product.mode_name}}</small></a> <br>
                 <small>Engine: {{cart_item.product.engine}}</small>
             </div>
             <div class="mt-3 ">
@@ -57,7 +58,7 @@
             <div class="  mx-5 flex flex-col items-center mt-3">
                 <img src="{% static 'images/misc/payments.png' %}" alt="" class="w-32 items-center">
                 <button class="bg-blue-500 text-white p-2 rounded w-full  m-3">Checkout</button>
-                <button class="p-2 rounded  w-full bg-gray-50">Continue Shopping</button>
+                <a href="{% url 'home' %}" class="p-2 rounded  w-full bg-gray-50">Continue Shopping</a>
             </div>
 
         </div>
