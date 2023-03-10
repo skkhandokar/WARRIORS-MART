@@ -26,7 +26,7 @@ def contactPage(request):
         if subject and message and email:
            contact=Contact_us(sender_name=name,from_email=email,subject=subject,message=message)
            contact.save()
-           send_mail(message,subject,email, [admin,email,name])
+           send_mail(subject,message,email, [admin,email,name])
            messages.success(request,'Succesfully Send Message!')
         
          
